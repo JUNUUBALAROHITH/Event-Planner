@@ -1,0 +1,115 @@
+body {
+    background: #fff;
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Nunito',sans-serif;
+    background: url('background2.jpeg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+input.button {
+    font-family: 'nunito', sans-serif;
+    font-weight: 700;
+    text-align: center;
+}
+
+.main-div  {
+    width: 25%;
+    margin: 0px auto;
+    margin-top: 150px;
+    padding: 20px;
+}
+
+.loggedin-div   {
+    width: 25%;
+    margin: 0px auto;
+    margin-top: 150px;
+    padding: 20px;
+}
+
+
+.main-div input {
+    text-align: center;
+    display: block;
+    border: 1px solid aqua;
+    border-radius: 5px;
+    background: aqua;
+    padding: 15px;
+    outline: none;
+    width: 100%;
+    margin-bottom: 20px;
+    border: 1px solic aqua;
+}
+
+.main-div input:focus {
+    border: 1px solid tomato;
+
+}
+
+.main-div button   {
+    background: aqua;
+    color: tomato;
+    border: 0px;
+    border: 1px solid tomato;
+    border-radius: 5px; 
+    padding: 15px;
+    display: block;
+    width: 108%;
+    transition: 0.3s;
+    -webkit-trasititon: 0.3s;
+    -moz-trasition: 0.3s;
+}
+
+.main-div  button:hover {
+    background: tomato;
+    color: aqua;
+    border: 1px solic aqua;
+
+}
+
+
+
+#Already{
+    color: aqua;
+    text-decoration: none;
+    text-align: center;
+    border: 1px solid aqua;
+    background-color: tomato;
+    width: 108%;
+    height: 70px;
+    margin-top: 20px 0;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    
+}
+
+#center{
+    text-align: center;
+    color: tomato;
+}
+
+.info {
+    text-align: center;
+    color: tomato;
+    background-color: aqua;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 10px;
+    margin-left: 50px;
+    margin-right: 50px;
+
+}
+.insta {
+    position: absolute;
+    right: 50%;
+    bottom: -8%;
+}
+
+.connect {
+    text-align: center;
+    color: white;
+    font-size: 40px;
+}

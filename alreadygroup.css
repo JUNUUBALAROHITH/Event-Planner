@@ -1,0 +1,69 @@
+body {
+    background: #fff;
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Nunito',sans-serif;
+}
+
+input.button {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    text-align: center;
+}
+
+.main-div  {
+    text-align: center;
+    width: 25%;
+    margin: 0px auto;
+    margin-top: 150px;
+    padding: 20px;
+}
+
+.loggedin-div   {
+    width: 25%;
+    margin: 0px auto;
+    margin-top: 150px;
+    padding: 20px;
+}
+
+
+.main-div input {
+    text-align: center;
+    display: block;
+    border: 1px solid aqua;
+    border-radius: 5px;
+    background: aqua;
+    padding: 15px;
+    outline: none;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.main-div input:focus {
+    border: 1px solid tomato;
+
+}
+
+.main-div button   {
+    background: aqua;
+    color: tomato;
+    border: 0px;
+    border: 1px solid tomato;
+    border-radius: 5px; 
+    padding: 15px;
+    display: block;
+    width: 108%;
+    transition: 0.3s;
+}
+
+.main-div  button:hover {
+    background: tomato;
+    color: aqua;
+    border: 1px solic aqua;
+
+}
+
+#center{
+    text-align: center;
+    color: tomato;
+}

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-app.js"></script>
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-analytics.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-database.js"></script>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="signup1.css" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIGN UP TO EVENT PLANNER</title>
+</head>
+<body>
+    <div class="box">
+    <div  class="main-div">
+        <h2 id="center">Event Planner </h3>
+        <br>
+        <h3 id="center">Sign Up to an new account </h3>
+        <br>
+        <input type="text" placeholder="Fullname..."  id="FullName" />
+        <input type="username" placeholder="Username..."  />
+        <input type="email" placeholder="Email..." id="email" />
+        <input type="password" placeholder="Create new password.." id="password" />
+
+        <button onclick="signUp()">Sign Up to an account</button>
+        <p id="Already">Already have an account? <a href="sign in.html" >Sign In</a></p>
+    </div>
+</div>
+
+<div class="insta">
+    <a href="https://www.instagram.com/rohith_junnubala/?hl=en"><img src="instagram.png"></a>
+    <a href="https://web.telegram.org/?legacy=1#/login"><img src="telegram.png"></a>
+</div>
+<div class="connect">
+    <p>CONNECT WITH ME  &#9755;</p>
+</div>
+<br>
+<br>
+<br>
+
+<p class="info">Dear fresh users, after successfully signed up users can go to sign in page to enter to world of EVENT PLANNER. Kindly click on sign in button if you already have account in event planner</p>
+
+<script>// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+      apiKey: "AIzaSyC4vZkU_fVUiC8BY_I7x1UbkdBivKjoEY8",
+      authDomain: "sign-in-36cae.firebaseapp.com",
+      projectId: "sign-in-36cae",
+      storageBucket: "sign-in-36cae.appspot.com",
+      databaseURL: "https://sign-in-36cae-default-rtdb.firebaseio.com",
+      messagingSenderId: "976580612814",
+      appId: "1:976580612814:web:3dcfcd2f9fa72350ee369f",
+      measurementId: "G-08H1ZKXSEY"
+    };
+    
+    // Initialize Firebase
+      // firebase.initializeApp(firebaseConfig);
+      const app = firebase.initializeApp(firebaseConfig);
+      // const analytics = getAnalytics(app);
+    
+    
+            const auth = firebase.auth();
+            
+
+            function signUp()
+{
+
+  var email = document.getElementById("email").value;
+  var password = document.getElementById("password").value;
+  firebase.auth().createUserWithEmailAndPassword(email,password).then(function(){
+    
+       
+    var id=firebase.auth().currentUser.uid;
+    firebase.database().ref('Group-Form'+id).set({
+     
+    }).then(()=>{
+
+       window.location.assign('homepage.html');
+      
+    }).catch(err => {
+       window.alert(err.message);
+   })
+}).catch(function(error){
+
+    var errorcode=error.code;
+    var errormsg=error.message;
+    window.alert(errormsg);
+
+   });
+}
+
+</script>
+</body>
+</html>

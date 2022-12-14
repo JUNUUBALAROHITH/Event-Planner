@@ -1,0 +1,142 @@
+*{
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+
+}
+
+h3{
+    text-align: center;
+    color: tomato;
+}
+
+body{
+    font-family: sans-serif;
+    background-color: aqua;
+}
+
+nav{
+    background: tomato;
+    height: 80px;
+    width: 100%;
+
+}
+
+label.logo{
+    color: aqua;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+}
+
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a{
+    color: tomato;
+    font-size: 17px;
+    text-transform: uppercase;
+    border-radius: 5px;
+    padding: 7px 13px;
+}
+
+a.active,a:hover{
+    color: aqua;
+    background: tomato;
+    transition: 0.3s;
+}
+
+.box1 {
+    color: tomato;
+    text-align: center;
+    border: solid 5px tomato;
+    border-radius: 5px;
+    background-color: aqua;
+    padding: 50px;
+    text-align: center;
+    margin-left: 600px;
+    margin-right: 600px;
+    margin-top: 30px;
+    position: relative;
+}
+
+.box1 :hover {
+    background-color: tomato;
+    color: aqua;
+    transition: 0.3s;
+    border: 50px solid tomato;
+    border-radius: 5px;
+    position: relative;
+}
+
+.box2 {
+    color: tomato;
+    text-align: center;
+    border: solid 5px tomato;
+    border-radius: 5px;
+    background-color: aqua;
+    padding: 50px;
+    text-align: center;
+    margin-left: 600px;
+    margin-right: 600px;
+    margin-top: 30px;
+    position: relative;
+}
+
+.box2 :hover {
+    background-color: tomato;
+    color: aqua;
+    transition: 0.3s;
+    border: 50px solid tomato;
+    border-radius: 5px;
+    position: relative;
+}
+
+.bottom {
+    background-color: tomato;
+    color: aqua;
+    text-align: center;
+    padding: 50px;
+    margin-top: 50px;
+}
+
+.signout {
+    text-align: center;
+    background-color: aqua;
+    color: tomato;
+}
+
+.signout :hover {
+    text-align: center;
+    background-color: tomato;
+    color: aqua;
+}
+
+
+button   {
+    background: aqua;
+    color: tomato;
+    border: 0px;
+    border: 1px solid tomato;
+    border-radius: 5px; 
+    padding: 15px;
+    display: block;
+    width: 100%;
+    transition: 0.3s;
+    -webkit-trasititon: 0.3s;
+    -moz-trasition: 0.3s;
+}
+
+button:hover {
+    background: tomato;
+    color: aqua;
+    border: 1px solic aqua;
+
+}
